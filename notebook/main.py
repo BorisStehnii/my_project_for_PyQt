@@ -12,7 +12,7 @@ def main():
 
     view = NoteView()
     model = NoteModel
-    NoteController(view=view)
+    NoteController(view=view, model=model)
 
     view.show()
     sys.exit(app.exec())

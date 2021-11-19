@@ -2,12 +2,11 @@ from PyQt5.QtWidgets import (QMainWindow, QWidget, QScrollArea, QCheckBox,
                              QVBoxLayout, QHBoxLayout, QLineEdit, QGridLayout, QPushButton)
 from functools import partial
 
+
 class NoteView(QMainWindow):
 
     def __init__(self):
         super().__init__()
-
-        self.list_tasks = []
 
         self.setWindowTitle('notebook')
         self.setFixedSize(500, 300)

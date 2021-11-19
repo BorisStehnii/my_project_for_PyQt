@@ -1,7 +1,9 @@
 
 
 class NoteModel:
-    pass
+
+    def __init__(self):
+        self.list_tasks = []
 
 
 

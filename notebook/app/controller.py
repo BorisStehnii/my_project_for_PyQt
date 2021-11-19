@@ -4,10 +4,10 @@ from PyQt5.QtWidgets import QCheckBox
 
 class NoteController:
 
-    def __init__(self, view):
+    def __init__(self, view, model):
 
         self._view = view
-        # self._model = model
+        self._model = model
         self._assign_signal()
 
     def _assign_signal(self):
@@ -17,7 +17,7 @@ class NoteController:
     def update_list_tasks(self):
         task = self.create_task()
         task.setStyleSheet('font-size: 13pt; color: black')
-        self._view.list_tasks.append(task)
+        self._model.list_tasks.append(task)
 
         self._view.display.setText('')
 
